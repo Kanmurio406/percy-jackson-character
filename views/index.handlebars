@@ -1,0 +1,13 @@
+<!-- Cards -->
+<div class="cards d-flex justify-content-between flex-wrap text-center" id="card-panel">
+  {{!-- each Card --}}
+  {{#each characters}}
+  <a class="card shadow-sm text-secondary my-3" style="width: 12rem;" href="/characters/{{this.id}}">
+    <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
+    <div class="card-body">
+      <h4>{{this.name}}</h4>
+      <p class="card-text">{{this.quote}}</p>
+    </div>
+  </a>
+  {{/each}}
+</div> <!-- Cards -->
